@@ -1,0 +1,34 @@
+.heading {
+    text-align: center;
+     font-family: initial;
+    text-decoration:underline;
+    color: lightcoral;
+}
+.first {
+    margin: 0px;
+    padding: 0px auto;
+    display:
+
+}
+.left {
+    float: left;
+    width: 76%;
+
+}
+.right {
+    float: right;
+    width: 17%;
+}
+.columns1 {
+float: left;
+width: 30%;
+}
+.columns2 {
+    float: left;
+    width: 30%;
+}
+.columns3 {
+    float: left;
+    width: 30%;
+
+}

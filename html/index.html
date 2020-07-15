@@ -2,17 +2,22 @@
 <html>
 <head>
    <title>MY INFORMATION</title>
+   <link rel="stylesheet" href="html.css"/>
+   <h2 style="color: blue; background-color: chartreuse; font-size: 35px; text-align: center;">INFORMATION</h2>
 </head>
 <body>
-<img src="IMG_1501.JPG" alt="my pic" height="300" width="360"/>
-<h2>SHAHZAIB HASSAN</h2>
+<img class="first" src="IMG_1501.JPG" alt="my pic" height="auto" width="172px" style="margin-left: 409px;"/>
+<h2 class="heading">SHAHZAIB HASSAN</h2>
+<section class="columns">
+    <div class="left">
 <h2>EDUCATION</h2>
 <ul>
     <li>SECOND YEAR ( M.B.D)</li>
     <li>FIRST YEAR ( M.B.D)</li>
     <li>MATRIC (Govt high school chround)</li>
 </ul>
-<h3>SECOND YEAR (M.B.D)</h3>
+    <div class="columns1">
+ <h3 style="margin-bottom: 39px;">SECOND YEAR (M.B.D)</h3>
 <table border="1">
     <thead>
     
@@ -42,8 +47,10 @@
 </tbody>
 
 </table>
-<h3>1ST YEAR ( M.B.D)</h3>
-<table border="1">
+    </div>
+    <div class="columns2">
+ <h3 style="margin-bottom: 42px;">1ST YEAR ( M.B.D)</h3>
+ <table border="1">
 <thead>
 <tr>
     <th>SUBJECT
@@ -69,9 +76,11 @@
     <td>6</td>
 </tr>
 </tbody>
-</table>
-<h3>MATRIC (Govt high school chround)</h3>
-<table border="1">
+ </table>
+    </div>
+    <div class="columns3">
+ <h3>MATRIC (Govt high school chround)</h3>
+ <table border="1">
 <thead>
 <tr>
 <th>SUBJECT</th>
@@ -96,43 +105,40 @@
     <td>5</td>
 </tr>
 </tbody>
-</table>
-<h3>HOBBIES</h3>
-<ul>
+ </table>
+    </div>
+    </div>
+    <div class="right">
+  <h3>HOBBIES</h3>
+  <ul>
     <li>CRICKET</li>
     <li>COMPUTER</li>
     <li>HOCKY</li>
-</ul>
-<div>
-<form action="prosecc.php" method="POST">
-<p>
+  </ul>
+  <div>
+ <form action="prosecc.php" method="POST">
+ <p>
     <label>Firstname</label>
     <input type="text" id="user" name="user">
-</p>
-<P>
+ </p>
+ <P>
     <label>Lastname</label>
     <input type="text" id="user" name="user">
-</P>
-<p>
+ </P>
+ <p>
     <label>Email</label>
         <input type="text" id="user" name="user">
-</p>
-<p>
+ </p>
+ <p>
     <label>Comment:-</label>
     <br>
     <textarea name="comment" id="" cols="30" rows="10" placeholder="typping......"></textarea>
     <br>
     <button>SUBMIT</button>
-</p>
-
-
-
-
-</form>
-
-
-
-
-</div>
+ </p>
+ </form>
+ </div>
+ </div>
+</section>
     </body>
 </html>
