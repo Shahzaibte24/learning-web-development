@@ -20,15 +20,30 @@
     width: 17%;
 }
 .columns1 {
-float: left;
-width: 30%;
+    color: #8a8a8a;
+    transition: color 0.5s;
+    float: left;
+    width: 30%;
 }
 .columns2 {
+    color: #8a8a8a;
+    transition: color 0.5s;
     float: left;
     width: 30%;
 }
 .columns3 {
+    color: #8a8a8a;
+    transition: color 0.5s;
     float: left;
     width: 30%;
 
+}
+.columns2:hover {
+    color: black;
+}
+.columns3:hover {
+    color: black;
+}
+.columns1:hover {
+    color: black;
 }
