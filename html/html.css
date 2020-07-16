@@ -8,16 +8,19 @@
     margin: 0px;
     padding: 0px auto;
     display:
-
+    
 }
 .left {
+
     float: left;
-    width: 76%;
+    width: 74%;
 
 }
 .right {
+    border: 1px solid;
+
     float: right;
-    width: 17%;
+    width: 23%;
 }
 .columns1 {
     color: #8a8a8a;
