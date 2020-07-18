@@ -50,3 +50,46 @@
 .columns1:hover {
     color: black;
 }
+.homepage {
+    display: flex;
+    justify-content: space-between;
+}
+.home {
+    text-transform: uppercase;
+    color: black;
+    height: 22px;
+    border-bottom: 1px solid;
+    transition: border-bottom 0.5s;
+
+}
+.about {
+    height: 22px;
+    border-bottom: 1px solid;
+    transition: border-bottom 0.5s;
+    color: black;
+    text-transform: uppercase;
+}
+.about a {
+    text-decoration: none;
+    color: #8a8a8a;
+    transition: 0.5s;
+}
+.about :hover {
+    border-bottom: 1px solid chartreuse;
+
+}
+.about a:hover {
+      color: chartreuse;        
+}
+.home a {
+    text-decoration: none;
+    transition: 0.5s;
+    color: #8a8a8a;
+}
+.home :hover {
+    border-bottom: 1px solid chartreuse;
+
+}
+.home a:hover {
+      color: chartreuse;        
+}

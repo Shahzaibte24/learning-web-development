@@ -3,7 +3,15 @@
    <title>MY INFORMATION</title>
    <link rel="stylesheet" href="html.css"/>
 </head>
-<body onload="welcome()" onunload="thanks()">
+<body onunload="thanks()">
+    <div class="homepage">
+          <div class="home">
+        <a href="home.html">Home</a>
+          </div>
+           <div class="about">
+        <a href="about.html">About</a>
+           </div>
+    </div>
     <h2 style="color: blue; background-color: chartreuse; font-size: 35px; text-align: center;" onmouseover="over(this)" onmouseout="out(this)">INFORMATION</h2>
     <img class="first" src="IMG_1501.JPG" alt="my pic" height="auto" width="172px" style="margin-left: 409px;"/>
     <h2 class="heading">SHAHZAIB HASSAN</h2>
@@ -119,26 +127,26 @@
   <h6>VISITING WEBSITE FOR HOBBIES</h6>
   <a href="https://artofmanliness.com">HOBBIES</a>
   <div>
- <form action="prosecc.php" method="POST">
+ <form action="login.php" method="POST" onsubmit="return validation" name="register">
  <p>
     <label>Firstname</label>
-    <input type="text" id="user" name="user">
+    <input type="text" id="user" name="user"/>
  </p>
  <P>
     <label>Lastname</label>
-    <input type="text" id="user" name="user">
+    <input type="text" id="user" name="user1"/>
  </P>
  <p>
         <label>Email Or Contact</label>
-        <input type="text" id="user" name="user">
+        <input type="text" id="user" name="user2"/>
  </p>
  <p>
     <label>Comment:-</label>
     <br>
     <textarea name="comment" id="" cols="25" rows="10" placeholder="typping......"></textarea>
     <br>
-    <input type="submit" value="SEND" onclick="yes()"/>
-    <input type="button" value="CLEAR" onclick="ok()"/>
+    <input type="submit" value="SUBMIT"/>
+    <input type="button" value="CLEAR"/>
  </p>
  </form>
  </div>
@@ -151,19 +159,26 @@
     function thanks () {
         alert("Thanks For visiting My Website");
   }
-     function yes () {
-        alert("Your form is submited THANK YOU");
-    
+     function validation () {
+         var Firstname = document.forms["register"]["user"].value;
+         var Lastname = document.forms["register"]["user1"].value;
+         if(Firstname==""){
+            alert("please fill the form");
+            return false;
+         }
+         if(Lastname==""){
+             alert("please fill the form");
+             return false;
+         }
     }
-     function ok () {
-        alert("ARE YOU SURE");
-  }
+  
      function over (a) {
         a.style.color= "black"
   }
     function out(a) {
         a.style.color="blue"
   }
+
 
 </script>
     </body>
