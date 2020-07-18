@@ -17,10 +17,11 @@
 
 }
 .right {
-    border: 1px solid;
-
     float: right;
-    width: 23%;
+    width: 25%;
+}
+.linemint {
+    border: 1px solid;
 }
 .columns1 {
     color: #8a8a8a;
