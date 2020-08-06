@@ -3,7 +3,7 @@
    <title>MY INFORMATION</title>
    <link rel="stylesheet" href="html.css"/>
 </head>
-<body onunload="thanks()">
+<body class="some">
     <div class="homepage">
           <div class="home">
               <a href="home.html">Home</a>
@@ -13,6 +13,12 @@
            </div>
     </div>
     <h2 style="color: blue; background-color: chartreuse; font-size: 35px; text-align: center;" onmouseover="over(this)" onmouseout="out(this)">INFORMATION</h2>
+        <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <a class="search-btn" href="#">SEARCH
+                </a>
+
+        </div>
     <img class="first" src="IMG_1501.JPG" alt="my pic" height="auto" width="172px" style="margin-left: 409px;"/>
     <h2 class="heading">SHAHZAIB HASSAN</h2>
     <section class="columns">
@@ -126,18 +132,18 @@
                  <h6>VISITING WEBSITE FOR HOBBIES</h6>
                  <a href="https://artofmanliness.com">HOBBIES</a>
                 <div>
-                    <form action="login.php" method="POST" onsubmit="return validation" name="register">
+                    <form action="login.php" method="POST" onsubmit="return validation()" name="register">
                     <p>
                             <label>Firstname</label>
                             <input type="text" id="user" name="user"/>
                     </p>
                     <P>
                             <label>Lastname</label>
-                            <input type="text" id="user" name="user1"/>
+                            <input type="text" id="user1" name="user1"/>
                     </P>
                     <p>
-                            <label> Email </label>
-                            <input type="text" id="user" name="user2"/>
+                            <label> Email or </label>
+                            <input type="text" id="user2" name="user2"/>
                     </p>
                     <p>
                             <label>Comment:-</label>
@@ -152,32 +158,29 @@
         </div>
     </div>
     </section>
-    <script type="text/javascript">
-     function welcome () {
-        alert("Welcome To My Website");
-  }
-     function thanks () {
-        alert("Thanks For visiting My Website");
-  }
-     function validation () {
-         var Firstname = document.forms["register"]["user"].value;
-         var Lastname = document.forms["register"]["user1"].value;
-         if(Firstname==""){
-            alert("please fill the form");
-            return false;
-         }
-         if(Lastname==""){
-             alert("please fill the form");
-             return false;
-         }
-    }
+    <script  type="text/javascript">
+        function welcome () {
+            alert("Welcome To My Website");
+        }
+        function validation () {
+            var Firstname = document.forms["register"]["user"].value;
+            var Lastname = document.forms["register"]["user1"].value;
+            if(Firstname==""){
+                alert("please fill the form");
+                return false;
+            }
+            if(Lastname==""){
+                alert("please fill the form");
+                return false;
+            }
+        }
   
-     function over (a) {
-        a.style.color= "black"
-  }
-     function out(a) {
-        a.style.color="blue"
-  }
+        function over (a) {
+            a.style.color= "black"
+        }
+        function out(a) {
+            a.style.color="blue"
+        }
 
 
     </script>

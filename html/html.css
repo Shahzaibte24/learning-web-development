@@ -1,3 +1,52 @@
+.some {
+    background:peru;
+    padding: 0;
+    margin: 0;
+
+}
+.search-box {
+    position: absolute;
+    background:#2f3640;
+    border-radius: 30px;
+    height: 37px;
+    padding: 14px;
+    text-align: right;
+    float: left;
+    width: 220px;
+}
+.search-box:hover > .search-txt {
+   width: 240px;
+   padding: 0 6px;
+
+}
+.search-box:hover > .search-btn {
+    background: white;
+
+}
+.search-btn {
+    color: #e84118;
+    float: right;
+    width: 65px;
+    height: 13px;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+
+}
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.5s;
+    line-height: 28px;
+    width: 0px;
+} 
 .heading {
     text-align: center;
      font-family: initial;
@@ -23,19 +72,19 @@
     border: 1px solid;
 }
 .columns1 {
-    color: #8a8a8a;
+    color: red;
     transition: color 0.5s;
     float: left;
     width: 30%;
 }
 .columns2 {
-    color: #8a8a8a;
+    color:red;
     transition: color 0.5s;
     float: left;
     width: 30%;
 }
 .columns3 {
-    color: #8a8a8a;
+    color: red;
     transition: color 0.5s;
     float: left;
     width: 30%;
@@ -71,8 +120,9 @@
 }
 .about a {
     text-decoration: none;
-    color: #8a8a8a;
+    color:black;
     transition: 0.5s;
+    
 }
 .about :hover {
     border-bottom: 1px solid chartreuse;
@@ -84,7 +134,7 @@
 .home a {
     text-decoration: none;
     transition: 0.5s;
-    color: #8a8a8a;
+    color:black;
 }
 .home :hover {
     border-bottom: 1px solid chartreuse;
