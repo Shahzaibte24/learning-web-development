@@ -2,6 +2,8 @@
 <head>
    <title>MY INFORMATION</title>
    <link rel="stylesheet" href="html.css"/>
+   <script src="https://kit.fontawesome.com/bd39788727.js" crossorigin="anonymous"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 <body class="some">
     <div class="homepage">
@@ -19,9 +21,9 @@
     <h2 style="color: blue; background-color: chartreuse; font-size: 35px; text-align: center;" onmouseover="over(this)" onmouseout="out(this)">INFORMATION</h2>
         <div class="search-box">
                 <input class="search-txt" type="text" name="" placeholder="Type to search">
-                <a class="search-btn" href="#">SEARCH
+                <a class="search-btn" href="#">
+                        <i class="fas fa-search-plus"></i>
                 </a>
-
         </div>
     <img class="first" src="IMG_1501.JPG" alt="my pic" height="auto" width="172px" style="margin-left: 409px;"/>
     <h2 class="heading">SHAHZAIB HASSAN</h2>
@@ -36,7 +38,7 @@
                 <li>MATRIC (Govt high school chround)</li>
             </ul>
             <div class="columns1">
-                    <h3 style="margin-bottom: 39px;">SECOND YEAR (M.B.D)</h3>
+                    <h3>SECOND YEAR (M.B.D)</h3>
                     <table border="3">
                             <thead>
     
@@ -66,7 +68,7 @@
                     </table>
             </div>
             <div class="columns2">
-                <h3 style="margin-bottom: 42px;">1ST YEAR ( M.B.D)</h3>
+                <h3>1ST YEAR ( M.B.D)</h3>
                  <table border="3">
                     <thead>
                             <tr>
@@ -124,68 +126,118 @@
                  </table>
             </div>
         </div>
-        <div class="right">
-            <h3>HOBBIES</h3>
-            <div class="linemint">
-                 <ul>
-                     <li>CRICKET</li>
-                     <li>COMPUTER</li>
-                     <li>HOCKY</li>
-                 </ul>
-                 <br>
-                 <h6>VISITING WEBSITE FOR HOBBIES</h6>
-                 <a href="https://artofmanliness.com">HOBBIES</a>
-                <div>
-                    <form action="login.php" method="POST" onsubmit="return validation()" name="register">
-                        <h3>Enter your Name and Email :--</h3>
-                    <p>
-                            <label>Firstname</label>
-                            <input type="text" id="user" name="user"/>
-                    </p>
-                    <P>
-                            <label>Lastname</label>
-                            <input class="nametype" type="text" id="user1" name="user1" />
-                    </P>
-                    <p>
-                            <label> Email or </label>
-                            <input type="text" id="user2" name="user2"/>
-                    </p>
-                    <p>
-                            <label>Comment:-</label>
-                        <br>
-                            <textarea name="comment" id="" cols="25" rows="10" placeholder="typping......"></textarea>
-                        <br>
-                            <input type="submit" value="SUBMIT"/>
-                            <input type="button" value="CLEAR"/>
-                    </p>
-                    </form>
+    </section>
+    <section>
+            <h1 style="text-align: center; font-family: 'Josefin Sans', sans-serif; background: #000; color: #fff;font-size: 34px; background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3));"> My Hobbies </h1>
+            <div class="myhobbie">
+                    <div class="hobbiesName">
+                        <h3>1 Board Games</h3>
+                        <h3>2 Art and Illustration</h3>
+                        <h3>3 Reading</h3>
+                        <h3>4 Video Games</h3>
+                        <h3>5 Sports and Exercise</h3>
+                        <h3>6 Music</h3>
+                            <a class="btnone" href="#">About</a>
+                            <a  class="btntwo" href="https://www.raywenderlich.com/862-top-8-programmer-hobbies"> More</a>
+                    </div>
             </div>
-        </div>
-    </div>
     </section>
     <script  type="text/javascript">
-        function welcome () {
-            alert("Welcome To My Website");
-        }
-        function validation () {
-            var Firstname = document.forms["register"]["user"].value;
-            var Lastname = document.forms["register"]["user1"].value;
-            if(Firstname==""){
-                alert("please fill the form");
+      //  const firstName = document.getElementById('fisrtName');
+        //const secondName = document.getElementById('secondName');
+        //const myEmail = document.getElementById('myEmail');
+        //const form = document.getElementById('form');
+        //const error = document.getElementById('error');
+        //color validation
+        //const green = '#ACAF50';
+        const red = '#F44336';
+        //function validateFirstName() {
+                //check is epmty
+                if(checkEpmty(firstName)) return;
+                //is it has only letters
+                if (!checkOnlyLetters(field)) return;
+                return true;
+        //}
+        //function checkEpmty(feild) {
+                if(isEmpty(feild.value.trim())){
+                        setinvalid(field , `${field.name} must not be empty`);
+                        return true;
+                }else{ 
+                        setinvalid(field);
+                        return false;
+                }
+        //}
+        //function isEmpty(value) {
+                if(value === '') return true;
                 return false;
-            }
-            if(Lastname==""){
-                alert("please fill the form");
-                return false;
-            }
-        }
-  
+        //}
+        //function invalid(field){
+                field.className = 'invalid';
+                field.nextElementSibling.innerHTML = message;
+                field.nextElementSibling.style.color = red;
+        //}
+        
+        //function valid(field){
+                field.ClassName = 'valid';
+                field.nextElementSibling.innerHTML = '';
+               // field.nextElementSibling.style.color = green;
+        //}
+        //function checkOnlyLetters(field) {
+                if(/^[a-zA-Z]+$/.test(field.value)) {
+                        setvalid(field);
+                        return true;
+                } else{
+                        setinvalid(field, `${field.name}must contain only letters`);
+                        return false;
+                }
+        //}
         function over (a) {
+                //on education and information
             a.style.color= "black"
         }
         function out(a) {
+                //on education and information
             a.style.color="blue"
         }
+       // var loadingPage = alert('welcome to My website');
+        //loadinPage();
+       // var age = prompt('What is Your Age');
+
+        //if ( (age >=18) && (age <= 35)   ) {
+          //      status = 'Target Demo';
+            //    document.write(status);
+                
+        //} else {
+              //  status = 'not My audience';
+                //document.write(status);
+        //}
+        //diffirent betw weekday vs weekend 
+        // day 0 ---> sunday ---> weekend sorry
+        // day 1 ----> monday ---> weekday 
+        // day 2 -- > tuesday --- > weekday 
+        // day 3 ---> wensday --> weekday
+        // day 4 ---> thrusday --- > weekday
+        // day 5 ---> friday ----> half  weekend
+        // day 6 -- -> saturday -- > weekday
+        /*
+        switch  (prompt('Enter The Valid Day')) {
+                case  0:
+                text = 'weekend sorry';
+                break;
+
+        case  5 :
+                text = 'half weekend';
+                break;
+        case  6 :
+                text = 'weekend';
+                break;
+        default:
+                text = 'weekday';
+        }
+        console.log(text);/*
+
+        
+
 
 
     </script>
