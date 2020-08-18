@@ -226,3 +226,179 @@
 .home a:hover {
       color: chartreuse;        
 }
+.containar-form {
+    width: 100%;
+    height: 125vh;
+    font-family:'Josefin Sans', sans-serif; 
+    background-image: url("gradienta-LeG68PrXA6Y-unsplash.jpg");
+    
+    background-position: center;
+    background-size: cover;
+    margin-top: 40px;  
+}
+.containar-form h1 {
+    width: 800px;
+    background-color: rgba(0, 0, 0,0.6);
+    margin: auto;
+    color: #fff;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+.mane {
+    background-color: rgba(0, 0, 0,0.5);
+    width: 800px;
+    margin: auto;
+}
+form {
+    padding: 15px;
+}
+#name {
+    width: 100%;
+    height: 100px;
+}
+.name {
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 125px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.Firstname {
+    position: relative;
+    left: 114px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.Lastname {
+    position: relative;
+    left: 123px;
+    top: -40px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.firstlabel {
+    position: relative;
+    color: #E5E5E5;
+    font-size: 14px;
+    left: 189px;
+}
+.lastlabel {
+    position: relative;
+    color: #E5E5E5;
+    font-size: 14px;
+    left: 199px;
+    top: -4px;
+}
+.education {
+    position: relative;
+    color: #555;
+    line-height: 30px;
+    font-size: 14px;
+    left: 188px;
+    top: -37px;
+    width: 532px;
+    border-radius: 6px;
+    padding: 0 22px;
+}
+.email {
+    position: relative;
+    color: #555;
+    line-height: 30px;
+    font-size: 14px;
+    left: 188px;
+    top: -37px;
+    width: 532px;
+    border-radius: 6px;
+    padding: 0 22px;
+}
+.code {
+    position: relative;
+    color: #555;
+    line-height: 30px;
+    font-size: 14px;
+    left: 188px;
+    top: -37px;
+    width: 95px;
+    border-radius: 6px;
+    padding: 0 22px;
+}
+.number {
+    position: relative;
+    color: #555;
+    line-height: 30px;
+    font-size: 14px;
+    left: 139px;
+    top: -37px;
+    width: 360px;
+    border-radius: 6px;
+    padding: 0 22px;
+}
+.area-code {
+    position: relative;
+    top: -4px;
+    left: 41px;
+    font-size: 16px;
+    color: #E5E5E5;
+}
+.phone-number {
+    position: relative;
+    top: -4px;
+    left: -268px;
+    font-size: 16px;
+    color: #E5E5E5;
+}
+.option {
+    position: relative;
+    top: -23px;
+    left: 189px;
+    font-size: 16px;
+    color: #555;
+    line-height: 40px;
+    width: 332px;
+    padding: 0 22px;
+    outline: none;
+    overflow: hidden;
+}
+#student {
+    margin-left: 25px;
+    color: #fff;
+    font-size: 16px;
+}
+.radio {
+    display: inline-block;
+    padding-right: 70px;
+    font-size: 18px;
+    margin-left: 25px;
+    margin-top: 15px;
+    color: #fff;
+}
+.radio input {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+button {
+    background-color: #3BAF9F;
+    margin: 20px 0px 0px 20px;
+    display: block;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid #366473;
+    padding: 14px 110px;
+    outline: none;
+    color: #fff;
+    transition: 0.25px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #5390f5;
+}

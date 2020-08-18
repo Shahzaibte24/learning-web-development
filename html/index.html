@@ -142,6 +142,62 @@
                     </div>
             </div>
     </section>
+    <section>
+        <div class="containar-form">
+                <h1> Form</h1>
+                <div class="mane">
+                        <form action="#" onsubmit="return validation()">
+                                  <div id="name">
+                                        <h2 class="name">Name</h2>
+                                        <label class="firstlabel">Firstname :</label>
+                                        <input type="text" name="first" id="firsName" class="Firstname">
+                                  
+                                  
+                                        <label class="lastlabel">Lastname :</label>
+                                        <input type="text" name="last" id="lastName" class="Lastname">
+                                  </div>
+                                  <h3 class="name">Education</h3>
+                                  <input type="text" name="EDUCATION" class="education" >
+                                  <h3 class="name">Email</h3>
+                                  <input id="mail" type="text" name="email" class="email">
+                                  <h3 class="name">Phone</h3>
+                                  <input class="code" type="text" name="area-code" id="phonenumber">
+                                  <label class="area-code"> Area code</label>
+                                  <input class="number" type="text" name="phone">
+                                  <label class="phone-number">Phone Number</label>
+                                  <h3 class="name"> Your Subject</h3>
+                                  <select class="option" name="subject">
+                                          <option disabled="disabled" selected="selected">---Option</option>
+                                          <option> 1 FA</option>
+                                          <option>2 FSC</option>
+                                          <option>3 ICS</option>
+                                          <option>4 ICOM</option>
+                                  </select>
+                                  <h3 id="student">Are You Educator</h3>
+                                  <label class="radio">
+                                          <input class="radion-one" type="radio" checked="checked" name="">
+                                          <span class="checkmark"></span>
+                                          Yes
+                                  </label>
+                                  <label class="radio">
+                                        <input class="radion-two" type="radio" checked="checked" name="">
+                                        <span class="checkmark"></span>
+                                        No
+                                </label>
+                                <button type="submit">Register</button>
+                        </form>
+
+                </div>
+
+        </div>
+
+
+
+
+
+
+
+    </section>
     <script  type="text/javascript">
       //  const firstName = document.getElementById('fisrtName');
         //const secondName = document.getElementById('secondName');
@@ -219,8 +275,8 @@
         // day 4 ---> thrusday --- > weekday
         // day 5 ---> friday ----> half  weekend
         // day 6 -- -> saturday -- > weekday
-        /*
-        switch  (prompt('Enter The Valid Day')) {
+        
+        /*switch  (prompt('Enter The Valid Day')) {
                 case  0:
                 text = 'weekend sorry';
                 break;
