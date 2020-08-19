@@ -4,6 +4,26 @@
    <link rel="stylesheet" href="html.css"/>
    <script src="https://kit.fontawesome.com/bd39788727.js" crossorigin="anonymous"></script>
    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+   <script  type="text/javascript">
+        function validateForm() { 
+            var a = document.forms["Form"]["answer-a"].value;
+            var b = document.forms["Form"]["answer-b"].value;
+            if (a == null || a == "" || a.length<3 || a.length >20) {
+                    alert("please All Requird Fill in Field");
+                    return true;
+            }else {
+                    alert("Your Form is Submited");
+                    return false; 
+            }
+            if(b == null || b == "" || b.length<3 || b.length>10) {
+                    alert("Please All Requird Fill in Field");
+                    return true;
+            }else {
+                    alert("Your Form is Submited");
+                    return false; 
+            }
+            };
+</script>
 </head>
 <body class="some">
     <div class="homepage">
@@ -146,15 +166,14 @@
         <div class="containar-form">
                 <h1> Form</h1>
                 <div class="mane">
-                        <form action="#" onsubmit="return validation()">
+                        <form action="" name="Form" onsubmit=" return validateForm()">
                                   <div id="name">
                                         <h2 class="name">Name</h2>
                                         <label class="firstlabel">Firstname :</label>
-                                        <input type="text" name="first" id="firsName" class="Firstname">
-                                  
+                                        <input type="text" name="first" id="answer-a" class="Firstname" value="">
                                   
                                         <label class="lastlabel">Lastname :</label>
-                                        <input type="text" name="last" id="lastName" class="Lastname">
+                                        <input type="text" name="last" id="answer-b" class="Lastname">
                                   </div>
                                   <h3 class="name">Education</h3>
                                   <input type="text" name="EDUCATION" class="education" >
@@ -190,112 +209,6 @@
                 </div>
 
         </div>
-
-
-
-
-
-
-
     </section>
-    <script  type="text/javascript">
-      //  const firstName = document.getElementById('fisrtName');
-        //const secondName = document.getElementById('secondName');
-        //const myEmail = document.getElementById('myEmail');
-        //const form = document.getElementById('form');
-        //const error = document.getElementById('error');
-        //color validation
-        //const green = '#ACAF50';
-        const red = '#F44336';
-        //function validateFirstName() {
-                //check is epmty
-                if(checkEpmty(firstName)) return;
-                //is it has only letters
-                if (!checkOnlyLetters(field)) return;
-                return true;
-        //}
-        //function checkEpmty(feild) {
-                if(isEmpty(feild.value.trim())){
-                        setinvalid(field , `${field.name} must not be empty`);
-                        return true;
-                }else{ 
-                        setinvalid(field);
-                        return false;
-                }
-        //}
-        //function isEmpty(value) {
-                if(value === '') return true;
-                return false;
-        //}
-        //function invalid(field){
-                field.className = 'invalid';
-                field.nextElementSibling.innerHTML = message;
-                field.nextElementSibling.style.color = red;
-        //}
-        
-        //function valid(field){
-                field.ClassName = 'valid';
-                field.nextElementSibling.innerHTML = '';
-               // field.nextElementSibling.style.color = green;
-        //}
-        //function checkOnlyLetters(field) {
-                if(/^[a-zA-Z]+$/.test(field.value)) {
-                        setvalid(field);
-                        return true;
-                } else{
-                        setinvalid(field, `${field.name}must contain only letters`);
-                        return false;
-                }
-        //}
-        function over (a) {
-                //on education and information
-            a.style.color= "black"
-        }
-        function out(a) {
-                //on education and information
-            a.style.color="blue"
-        }
-       // var loadingPage = alert('welcome to My website');
-        //loadinPage();
-       // var age = prompt('What is Your Age');
-
-        //if ( (age >=18) && (age <= 35)   ) {
-          //      status = 'Target Demo';
-            //    document.write(status);
-                
-        //} else {
-              //  status = 'not My audience';
-                //document.write(status);
-        //}
-        //diffirent betw weekday vs weekend 
-        // day 0 ---> sunday ---> weekend sorry
-        // day 1 ----> monday ---> weekday 
-        // day 2 -- > tuesday --- > weekday 
-        // day 3 ---> wensday --> weekday
-        // day 4 ---> thrusday --- > weekday
-        // day 5 ---> friday ----> half  weekend
-        // day 6 -- -> saturday -- > weekday
-        
-        /*switch  (prompt('Enter The Valid Day')) {
-                case  0:
-                text = 'weekend sorry';
-                break;
-
-        case  5 :
-                text = 'half weekend';
-                break;
-        case  6 :
-                text = 'weekend';
-                break;
-        default:
-                text = 'weekday';
-        }
-        console.log(text);/*
-
-        
-
-
-
-    </script>
 </body>
 </html>
